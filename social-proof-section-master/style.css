@@ -1,0 +1,128 @@
+:root{
+  --priFont:'League Spartan', sans-serif;
+}
+
+body{
+  display: grid;
+  font-weight: 400;
+  place-content: center;
+  min-height: 100vh;
+  padding-left: 120px;
+  background: url(images/bg-pattern-top-desktop.svg);
+}
+.card{
+width: 100%;
+height: auto;
+}
+
+.header_area{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 5px;
+width: 800px;
+}
+.top_header_area{
+ width: 400px;
+}
+
+h1{
+  font-weight: 700;
+   color: hsl(300, 43%, 22%);
+   font-size: 32px;
+}
+
+p{
+  font-size: 15px;
+  color: hsl(303, 10%, 53%);
+}
+h5{
+  font-size: 15px;
+  color: hsl(303, 10%, 53%);
+    background: hsl(300, 24%, 96%);
+}
+
+h4{
+  color:hsl(300, 24%, 96%); 
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+span{
+  font-size: 36px;
+}
+
+.rate-view{
+  display: flex;
+  flex-wrap: wrap;
+margin-top: 50px; 
+ width: 400px; 
+ margin-right: 35px;
+}
+
+.rate-review{
+ margin-top: -45px;
+ margin-left: 120px;
+}
+
+.rate-img{
+  background: hsl(300, 24%, 96%);
+}
+
+.rank{
+color:hsl(333, 80%, 67%);
+font-size: 15px;
+padding-left: 65px;
+}
+
+.client-review{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+ margin-bottom: 15px;
+ width: 720px;
+}
+
+.client-img{
+  width: 60px;
+  height: 60px;
+  border-radius: 80%;
+  margin: 5px;
+  margin-bottom:-15px ;
+}
+
+.header{
+  background:  hsl(300, 43%, 22%);
+ padding: 15px;
+  border-radius: 10px;
+}
+
+.middle{
+  background:  hsl(300, 43%, 22%);
+   padding: 15px 0;
+  border-radius: 10px;
+}
+.footer{
+  background:  hsl(300, 43%, 22%);
+ padding: 15px 0;
+  border-radius: 10px;
+}
+
+.client-satisfaction{
+  padding: 15px;
+}
+
+/*Responsive CSS*/
+
+@media only screen and (max-width:1200px) and (min-width:400px) {
+  .header_area{
+    grid-template-columns: 1fr;
+    width: 380px;
+    margin: 5px;
+  }
+  .client-review{
+     grid-template-columns: 1fr;
+    width: 380px;
+    margin: 5px;
+   row-gap: 10px;
+  }
+}
